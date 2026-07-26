@@ -30,9 +30,14 @@ every word is a [[particle]]; not every particle is a word. a raw blob is a part
 
 at the frontier a word is a point in a (mixed-curvature) manifold whose [[focus]] belief is a distribution, not a point; a monosemantic entry mined from the graph. polysemy is the word held under tension between incompatible senses — measurable as curvature or superposition, and splittable at the spectral fault line. see [[frontier]].
 
-## the type — the hard part
+## the type — two halves, one declared
 
-a word's [[type]] has to span two worlds. a value-word is typed by the 16 [[languages]] — a number is Field, a matrix is Tensor, a distribution is Distribution. a concept-word is typed by its [[dialect]] and role — is-a, causes, part-of. the word is where soft3's computational types and neural's semantic categories meet under one `type`. that convergence is the hard part, and the reason `word` sits at the foundation.
+a word's [[type]] spans two worlds, and the resolution is to *not* store both. one half is **declared**, the other **emerges**:
+
+- **computational type (`ctype`) — declared, stored.** a value-word is typed by the 16 [[languages]] — a number is Field, a matrix is Tensor, a distribution is Distribution. this is fixed by [[nox]] at the form; a word carries it.
+- **semantic role — emergent, derived.** is-a, causes, part-of are *not* a stored field. a word's role is its position — which [[relation]]-words it links through, ranked by [[focus]]. *neural's types are not declared; they emerge* (see the explanation). so the role is read from the graph, never written on the word.
+
+so the stored word is `{ particle, ctype, name }`; the semantic type is a reading of the neighbourhood, not a column. that split is what makes `word` buildable — the "convergence" was only hard while we tried to store the half that emerges.
 
 ## form is not the word
 

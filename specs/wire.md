@@ -29,6 +29,8 @@ Link { from: Ref, to: Ref, amount: Amount, valence: i8 }
 
 each [[link]] is one [[neuron]]'s staked assertion; the [[cybergraph]] bundles the links on a pair into an [[axon]].
 
+the wire is **untyped** — there is no relation slot, and there does not need to be. a typed [[relation]] rides as a second link on the axon: `cat is-a animal` seals `[cat → animal, H(cat,animal) → is_a]` in one signal (see [[relation]]). the type is a [[link]] like any other; `H(from,to)` (`bbg::state::axon_id`) is deterministic, so the [[dialect]] can address the axon in the same signal it creates.
+
 ## submission
 
 - intent → seal — a two-phase submit, or one-shot for small signals

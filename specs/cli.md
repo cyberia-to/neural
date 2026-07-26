@@ -97,6 +97,18 @@ only `build`, `stake`, and any assertion / definition sentence mutate the graph.
 - **intent → seal** — two-phase submit (one-shot for small signals); `--dry` stops at intent and prints the composed signal.
 - **atomic** — the whole signal lands or none of it does; half a [[sentence]] never exists.
 - **idempotent** — a [[word]] resolves to a global [[particle]] and a [[link]] restakes rather than duplicates, so re-running a `build` merges instead of appending.
+- **typed by [[axon]]** — a typed [[relation]] (`cat is-a animal`) seals as two links, `[cat → animal, H(cat,animal) → is_a]`; the dialect builds both, the wire stays untyped (see [[relation]]).
+
+### surface syntax
+
+the authoring grammar is a [[sentence]], resolved by the active [[dialect]]:
+
+```
+neu "cat is-a animal"        # natural: the dialect maps `is-a` → the is_a relation-word
+neu "#cat ~is-a #animal"     # sigil-explicit: disambiguate when a name is ambiguous
+```
+
+slice-1 grammar is exactly three tokens — `subject relation object`; the [[dialect]] resolves `relation` to a [[relation]]-word and expands to the base + axon-type link. multi-link chains and the full [[sigil]] grammar layer on later; a non-sentence is rejected, not guessed.
 
 ## the read path — neu never computes meaning
 

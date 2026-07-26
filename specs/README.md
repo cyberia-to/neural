@@ -25,7 +25,7 @@ neural builds meaning from the [[sigil]] up — the densest operator, then the [
 | [[dialect]] | convention — an agreed collection of sentences and motifs | `dialect.md` |
 | [[lexicon]] | the living vocabulary — top words by φ\* | `lexicon.md` |
 
-the wire format that carries them: `wire.md`. the surface that speaks them: `cli.md` ([[neu]]).
+the atom's type — a [[relation]] as a link on the [[axon]]: `relation.md`. the wire format that carries them: `wire.md`. the surface that speaks them: `cli.md` ([[neu]]). how it all binds to the built stack: `binding.md`.
 
 ## cross-cutting law
 
