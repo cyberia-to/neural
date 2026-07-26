@@ -1,0 +1,12 @@
+[package]
+name = "neural-sigil"
+version = "0.1.0"
+edition = "2021"
+description = "neural surface syntax: text → a typed sentence; word → particle"
+
+[lib]
+name = "sigil"
+path = "src/lib.rs"
+
+[dependencies]
+cyber-hemera = { path = "../../../hemera/rs" }

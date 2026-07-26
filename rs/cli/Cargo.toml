@@ -1,0 +1,16 @@
+[package]
+name = "neu"
+version = "0.1.0"
+edition = "2021"
+description = "neu — the neural CLI: speak the graph, read it back"
+
+[[bin]]
+name = "neu"
+path = "src/main.rs"
+
+[dependencies]
+neural-sigil = { path = "../sigil" }
+neural-dialect = { path = "../dialect" }
+cyb-core = { path = "../../../cyb/core" }
+cybergraph = { path = "../../../cybergraph" }
+bbg = { path = "../../../bbg/rs" }

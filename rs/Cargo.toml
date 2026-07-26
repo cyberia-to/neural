@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["sigil", "dialect", "cli"]
+
+# A detached workspace: neural rides the built soft3 stack (cybergraph → bbg →
+# nox → inf) by path, adding no new core deps — the same crates the cyb cell
+# already compiles. `neu` is a client of the cell, not a second runtime.

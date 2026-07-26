@@ -1,0 +1,13 @@
+[package]
+name = "neural-dialect"
+version = "0.1.0"
+edition = "2021"
+description = "neural dialects: expand a sentence into the cyberlinks it lands as"
+
+[lib]
+name = "dialect"
+path = "src/lib.rs"
+
+[dependencies]
+neural-sigil = { path = "../sigil" }
+bbg = { path = "../../../bbg/rs" }
